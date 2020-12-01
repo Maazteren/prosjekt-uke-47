@@ -1,4 +1,4 @@
-input.onButtonPressed(Button.A, function on_button_pressed_a() {
+input.onButtonPressed(Button.A, function () {
     pins.digitalWritePin(DigitalPin.P0, 1)
     music.playTone(262, music.beat(BeatFraction.Half))
     music.rest(music.beat(BeatFraction.Sixteenth))
@@ -118,11 +118,11 @@ input.onButtonPressed(Button.A, function on_button_pressed_a() {
     music.rest(music.beat(BeatFraction.Sixteenth))
     music.playTone(262, music.beat(BeatFraction.Breve))
 })
-input.onButtonPressed(Button.AB, function on_button_pressed_ab() {
+input.onButtonPressed(Button.AB, function () {
     music.playTone(262, music.beat(BeatFraction.Whole))
 })
-//  melodien til weekend 
-input.onButtonPressed(Button.B, function on_button_pressed_b() {
+// melodien til weekend
+input.onButtonPressed(Button.B, function () {
     music.playTone(262, music.beat(BeatFraction.Half))
     music.rest(music.beat(BeatFraction.Eighth))
     music.playTone(262, music.beat(BeatFraction.Whole))
@@ -130,6 +130,9 @@ input.onButtonPressed(Button.B, function on_button_pressed_b() {
     music.playTone(262, music.beat(BeatFraction.Double))
     music.rest(music.beat(BeatFraction.Whole))
     music.playTone(262, music.beat(BeatFraction.Quarter))
+    // helt ubrukelig 
+    // 
+    radio.setGroup(1)
     music.playTone(262, music.beat(BeatFraction.Half))
     music.playTone(262, music.beat(BeatFraction.Half))
     music.playTone(262, music.beat(BeatFraction.Quarter))
@@ -170,7 +173,7 @@ input.onButtonPressed(Button.B, function on_button_pressed_b() {
     music.playTone(262, music.beat(BeatFraction.Half))
     music.playTone(262, music.beat(BeatFraction.Half))
     music.playTone(262, music.beat(BeatFraction.Quarter))
-    //  usikker på lengde
+    // usikker på lengde
     music.playTone(262, music.beat(BeatFraction.Whole))
     music.playTone(262, music.beat(BeatFraction.Whole))
     music.rest(music.beat(BeatFraction.Half))
